@@ -1,15 +1,13 @@
-# Rahi Digital Portfolio — Netlify-only starter
+# Rahi Digital Portfolio — Netlify edition
 
-This version uses Netlify Functions and Netlify Blobs instead of Firebase/Supabase. It includes a public portfolio and password-protected dashboard for adding/deleting entries and uploading images/videos up to 50 MB via chunked uploads.
+## Deploy
+This folder is the site root. If your GitHub repository contains it inside `rahman-rahi-portfolio/`, configure Netlify Base directory as `rahman-rahi-portfolio`, publish directory `.`, functions directory `netlify/functions`. Keep the repository connected to Netlify so functions and dependencies are built.
 
-## Deployment requirement
-This project contains server-side functions and dependencies. **Netlify Drop/manual static upload will not deploy the backend.** Connect this folder/repository to Netlify through Git or use Netlify CLI so dependencies and functions are built.
+## Environment variables
+In Netlify project configuration add `ADMIN_PASSWORD` (your private admin password) and `SESSION_SECRET` (a different random secret of 32+ characters). Redeploy after saving. Never commit these values to GitHub.
 
-## Setup
-1. Deploy this folder using a Git-connected Netlify site; base directory is the folder containing `package.json` and `netlify.toml`.
-2. In Netlify Project configuration → Environment variables, add `ADMIN_PASSWORD` (strong unique password) and `SESSION_SECRET` (separate random secret, 32+ characters). Do not put either secret in code.
-3. Redeploy after adding the variables.
-4. Open `/admin.html` on your deployed site and sign in using `ADMIN_PASSWORD`.
+## Admin
+Visit `/admin.html`, sign in using `ADMIN_PASSWORD`. Update profile/contact/social links/education/skills and add/edit/delete portfolio items. Images/videos are uploaded to Netlify Blobs; keep uploads under 50 MB and within your account's current usage limits.
 
-## Limits and notes
-Netlify plan/credit limits apply to Functions, Blobs storage and bandwidth; this is not unlimited free hosting. Publicly uploaded media is public portfolio content. Test login, uploads, playback and deletion after deployment. This starter supports add/delete, not editing existing items.
+## Notes
+Data persists in Netlify Blobs. Free usage and storage/bandwidth limits can change; check your Netlify plan and usage dashboard.
