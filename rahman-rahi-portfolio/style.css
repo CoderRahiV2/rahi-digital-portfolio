@@ -10,3 +10,5 @@
   letter-spacing: .01em;
   line-height: 1.6;
 }
+
+#profile-photo{width:112px;height:112px;object-fit:cover;border-radius:28px;border:1px solid #65749b;box-shadow:0 12px 35px #0005;margin-bottom:20px}#profile-extras{margin-top:28px;color:var(--muted)}#profile-extras h3{color:var(--text);font-size:18px;margin:24px 0 10px}#profile-extras ul{padding-left:20px}#profile-extras li{margin:6px 0}.evidence-card[hidden]{display:none}#social-links a{padding:8px 11px;border:1px solid #37435c;border-radius:9px;color:#cdd5e8;font-size:11px}
