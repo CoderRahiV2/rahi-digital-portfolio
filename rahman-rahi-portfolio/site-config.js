@@ -1,6 +1,6 @@
 // Public site settings. Replace with your own email address.
 window.PORTFOLIO_CONFIG = {
-  contactEmail: "your-email@example.com",
+  contactEmail: "rahmanrahi2006@gmail.com",
   firebase: {
     apiKey: "PASTE_FIREBASE_WEB_API_KEY",
     authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
